@@ -30,6 +30,15 @@ body{
 
 }
 
+.icon-menu{
+  @media screen and (max-width: 768px){
+      span i{
+          display: none;
+      }
+  }
+
+}
+
 main{
   flex-grow: 1;
   height: 100%;

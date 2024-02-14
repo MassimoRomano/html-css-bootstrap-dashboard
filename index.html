@@ -16,30 +16,38 @@
 <body>
     <!-- header section -->
     <header class="site-header ">
-        <nav class="navbar navbar-expand-sm navbar-light px-2">
-            <div class="col-md-2">
-                <a class="navbar-brand" href=""><img width="120" src="./assets/img/logo.svg" alt=""></a>
-            </div>
-            <div class="serch-box input-group-text col-md-8 border-0 bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light px-3">
+            <a class="navbar-brand col-2 col-xl-2" href="#">
+                <img src="./assets/img/logo.svg" alt="Bootstrap" width="120" height="50" class="d-none d-xl-block d-md-block d-sm-none">
+                <img src="./assets/img/mobile-logo.png" alt="Bootstrap" width="40" class="d-block d-xl-none d-md-none d-sm-block">
+              </a>
+            <div class="serch-box input-group-text col-6 col-sm-8 col-xl-8  border-0 bg-light">
                 <span class="input-group-text border-0">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
                 <input class="form-control border-0 searchbar_bg bg-light" type="text"
                     placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
             </div>
-            <div class="col-md-2 d-flex justify-content-end gap-4 align-items-center ">
-                <span class="navbar-text">
+            <div class="icon-menu col-2 col-md-2 col-xl-2 d-flex justify-content-end gap-4 align-items-center ">
+                <span class="navbar-text d-xl-block d-md-block d-sm-none">
                     <i class="fa-solid fa-list-ul"></i>
                 </span>
-                <span class="navbar-text">
+                <span class="navbar-text d-xl-block d-md-block d-sm-none">
                     <i class="fas fa-question-circle"></i>
                 </span>
-                <span class="navbar-text">
+                <span class="navbar-text d-xl-block d-md-block d-sm-none">
                     <i class="fas fa-ellipsis-v"></i>
                 </span>
-                <span class="navbar-text  ">
-                    <i class="fas fa-bell"></i>
-                </span>
+                <div class="dropdown col-2 col-xl-2">
+                    <a class="dropstart" href="#" role="button dropdown-toggle " data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fas fa-bell "></i>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -71,7 +79,7 @@
             <section class="banner text-light">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="py-4 col-12 col-lg-6 order-3 order-lg-1">
+                        <div class="py-4 col-12 col-xl-6  ">
                             <div class="d-flex align-items-center gap-2">
                                 <h3>Boolean</h3>
                                 <span class="badge bg-primary-subtle">Piano
@@ -95,12 +103,12 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="py-4 col-12 col-lg-3 order-2 order-lg-2">
+                        <div class="py-4 col-12 col-xl-3 ">
                             <span>Studenti online negli ultimo 30
                                 minuti</span> <br>
                             <span class="fs-2">125</span>
                         </div>
-                        <div class="py-4 col-12 col-lg-3 order-1 order-lg-3">
+                        <div class="py-4  col-12 col-xl-3 ">
                             <span>Nuovo Studente</span>
                             <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
                                 aria-controls="offcanvasExample">
