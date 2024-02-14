@@ -1,13 +1,45 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-</html>
+:root{
+  --primary-leftbar:#051E34;
+  --second-leftbar:#10273D;
+  --prim-head:#1B72E8;
+}
+
+.site-header{
+  height: 70px;
+}
+
+body{
+  height: 100vh;
+  overflow-y: hidden;
+  
+}
+
+#wrapper{
+  height: calc(100% - 70px);
+}
+
+.sidebar{
+  background: linear-gradient(40deg, #10273D 60vh, #051E34 10vh);
+  width: 150px;
+  height: 100%;
+
+  @media screen and (max-width: 768px){
+      a span{
+          display: none;
+      }
+  }
+
+}
+
+main{
+  flex-grow: 1;
+  height: 100%;
+  width: calc(100% - 150px);
+  overflow-y: auto;
+  
+}
+
+.banner{
+  background-color: #1B72E8;
+  
+}
